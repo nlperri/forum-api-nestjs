@@ -12,7 +12,6 @@ import { z } from "zod";
 import { compare } from "bcryptjs";
 
 const authenticateBodySchema = z.object({
-  name: z.string(),
   email: z.string().email(),
   password: z.string(),
 });
